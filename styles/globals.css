@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind screens;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f3f4f6;
+  font-family: runda, sans-serif;
+  color: #374151;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-cover{
+  background-image: url('/img/204.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-tree{
+  background-image: url('/img/Trees.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.roots{
+  background-image: url('/img/bgRoots.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img_bg {
+  background-image: url('/img/grain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.business-bg{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/coffee.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 50% left 50%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  transition: transform 150ms ease-in-out;
+  z-index: 100;
+}
+
+nav.nav-bar--hidden {
+  transform: translateY(-100%);
+}
+
+.border-active{
+  border-bottom: 8px;
+  border-color: #15803d;
+  padding-bottom: 24px;
+}
+
+button:focus {
+outline-width: 1px;
+  outline-color: #4ADE80;
+}
+
+
+.skills {
+  white-space: nowrap;
+  animation: scrollText 25s infinite linear;
+  transform: translateX(-100%); 
+  color:#ada97d;
+}
+.langs {
+  white-space: nowrap;
+  animation: scrollText2 25s infinite linear;
+  transform: translateX(100%);
+  color:#ada97d;
+}
+
+@keyframes scrollText {
+  to { transform: translateX(100%); }
+}
+  
+@keyframes scrollText2 {
+  to { transform: translateX(-58%); }
+}
+
+.skills2 {
+  white-space: nowrap;
+  animation: scrollText3 30s infinite linear;
+  transform: translateX(-78%); 
+  color:#ada97d;
+}
+.langs2 {
+  white-space: nowrap;
+  animation: scrollText4 30s infinite linear;
+  transform: translateX(100%);
+  color:#ada97d;
+}
+
+@keyframes scrollText3 {
+  to { transform: translateX(100%); }
+}
+  
+@keyframes scrollText4 {
+  to { transform: translateX(-78%); }
+}
+
+
