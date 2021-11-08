@@ -14,7 +14,7 @@ const ResBtnDark = () => {
 
                 <div className="inline-block">
                     <p className="text-xs font-bold h-3">BUY AT</p>
-                    <p className="text-lg h-4 font-bold">WebstaurantStore</p>
+                    <p className="text-lg h-4 font-bold">The Restaurant Store</p>
                 </div>
             </button>
         </>

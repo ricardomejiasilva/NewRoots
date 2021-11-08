@@ -17,13 +17,13 @@ const Social = () => {
                     <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block mr-4 lg:mr-0 mb-2">
                        <img src="/img/93.png"></img> 
                     </div>
-                    <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block mr-4 lg:mr-0 mb-2">
+                    <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block md:mr-4 lg:mr-0 mb-2">
                         <img src="/img/94.png"></img>
                     </div>
                     <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block mr-4 lg:mr-0 mb-2">
                         <img src="/img/95.png"></img>
                     </div>
-                    <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block mr-4 lg:mr-0 mb-2">
+                    <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block md:mr-4 lg:mr-0 mb-2">
                         <img src="/img/96.png"></img>
                     </div>
                     

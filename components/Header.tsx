@@ -6,7 +6,7 @@ const Header = () => {
         <div className="px-6 lgg:px-0">
             <div className="max-w-1120 my-0 mx-auto py-24 mdd:flex justify-between font-runda">
                 <div className="max-w-lg mb-20">
-                    <h1 className="font-body font-extrabold text-8xl md:text-9xl uppercase text-secondary max-w-27 10 pb-8 leading- tracking-wide">planted 10,000 trees and counting</h1>
+                    <h1 className="font-body font-extrabold text-8xl md:text-9xl uppercase text-secondary max-w-27 10 pb-8 leading-14 tracking-wide">planted 10,000 trees and counting</h1>
                     <p className="text-lg leading-7 pb-8">Our paper-based cartons are 92% renewable and way less destructive to our planet than single-use plastic bottles and aluminum cans.</p>
                     <div>
                         <div className="inline-block mr-6 mb-6">

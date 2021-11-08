@@ -4,7 +4,7 @@ import useScrollListener from "../hooks/scroll";
 import Link from "next/link";
 import PrimaryBtn from "./btns/PrimaryBtn";
 
-const NavTest = () => {
+const Navbar = () => {
     const [navClassList, setNavClassList] = useState([]);
     const [modalOpen, setModalOpen] = useState(false)
     const scroll = useScrollListener();
@@ -134,4 +134,4 @@ const NavTest = () => {
   );
 };
 
-export default NavTest;
+export default Navbar;

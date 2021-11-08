@@ -18,14 +18,13 @@ const Footer = () => {
                             <h4 className="text-3xl text-semibold pb-9">New Roots</h4>
                             <p className="max-w-md text-base mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel ut pellentesque egestas viverra faucibus. Aliquam urna ac, ultricies lacinia odio libero, commodo. Urna arcu quis.</p>
                         </div>
-                        <div className="flex flex-col text- md:text-right">
+                        <div className="flex flex-col md:text-right">
                             <div className="pb-3">
                                 <WebsBtn />
                             </div>
                             <div>
                                 <ResBtn />
                             </div>
-
                         </div>
                     </div>
                     <div className="text-light text-sm md:flex md:justify-between w-40 md:w-full">
