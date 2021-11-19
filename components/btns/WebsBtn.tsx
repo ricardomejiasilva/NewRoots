@@ -1,8 +1,8 @@
 const WebsBtn = () => {
     return (
         <>
-            <button className="bg-white rounded-lg p-2 pb-0.5 text-left">
-                <div className="inline-block mr-2">
+            <a href="https://www.webstaurantstore.com/" target="_blank" className="bg-white rounded-lg pt-6 pb-1 px-2 text-left active:light active:outline-light">
+                <div className="inline-block mr-2 ">
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.500003 4.25112V15.126L2.82635 0.461914C2.1259 0.816348 1.53756 1.35823 1.12683 2.02723C0.716103 2.69623 0.499108 3.4661 0.500003 4.25112Z" fill="#4C9C2E"/>
                         <path d="M19.2232 3.55556L24.3025 5.92762L20.7063 25.1225L32.5006 9.83873V4.25143C32.5006 3.12388 32.0527 2.04251 31.2554 1.24521C30.4581 0.447917 29.3768 0 28.2492 0L10.8727 0L6.8092 18.6514L19.2232 3.55556Z" fill="#4C9C2E"/>
@@ -17,7 +17,7 @@ const WebsBtn = () => {
                     <p className="text-xs font-bold h-3">BUY AT</p>
                     <p className="text-lg h-4 font-bold">WebstaurantStore</p>
                 </div>
-            </button>
+            </a>
         </>
     );
 }

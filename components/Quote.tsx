@@ -2,10 +2,10 @@ const Quote = () => {
     return (
         <div id="quote" className="img_bg m-0 text-white relative">
             <div className="overflow-hidden">
-                <div className="skills font-bold text-10xl text-white opacity-10 h-64">
+                <div className="scroll-top font-bold text-10xl text-white opacity-10 h-64">
                     We’re restoring
                 </div>
-                <div className="langs font-bold text-10xl text-white opacity-10 h-68">
+                <div className="scroll-bottom font-bold text-10xl text-white opacity-10 h-68">
                     <p>the future</p> 
                 </div>
             </div>

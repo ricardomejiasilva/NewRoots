@@ -16,11 +16,11 @@ const Footer = () => {
                     <div className="pb-14 md:flex md:justify-between">
                         <div className="text-white">
                             <h4 className="text-3xl text-semibold pb-9">New Roots</h4>
-                            <p className="max-w-md text-base mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel ut pellentesque egestas viverra faucibus. Aliquam urna ac, ultricies lacinia odio libero, commodo. Urna arcu quis.</p>
+                            <p className="max-w-md text-base mb-8">New Roots provides top-quality, eco-friendly products with a better tomorrow in mind. Through our partnership with the National Forest Foundation, we pledge to plant new trees and restore the environment for future generations to enjoy.</p>
                         </div>
                         <div className="flex flex-col md:text-right">
                             <div className="pb-3">
-                                <WebsBtn />
+                                <WebsBtn></WebsBtn>
                             </div>
                             <div>
                                 <ResBtn />
@@ -31,7 +31,7 @@ const Footer = () => {
                         <p className="mb-2 md:mb-0">©2021, New Roots, Inc.  All Rights Reserved.</p>
                         <ul className="flex flex-wrap md:flex-nowrap">
                             <li className="pr-3 mb-2 md:mb-0"><Link href="/">Accessibility</Link></li>
-                            <li className="pr-3"><Link href="/">Privacy</Link></li>
+                            <li className="pr-3"><Link href="/Legal">Privacy</Link></li>
                             <li className="pr-3"><Link href="/">Terms of Use</Link></li>
                             <li><Link href="/">Security</Link></li>
                         </ul>

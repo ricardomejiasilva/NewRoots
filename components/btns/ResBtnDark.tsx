@@ -1,7 +1,7 @@
 const ResBtnDark = () => {
     return (
         <>
-            <button className="bg-black rounded-lg p-2 pb-0.5 text-left text-white">
+            <button type="button" className="bg-black rounded-lg p-2 pb-0.5 text-left text-white">
                 <div className="inline-block mr-2">
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" width="32" height="32" rx="2" fill="#359668"/>

@@ -2,10 +2,10 @@ const Benefits = () => {
     return (
         <div className="px-6 lgg:px-0">
             <div className="overflow-hidden py-24">
-                <div className="skills text-9xl text-black opacity-10  mb-12">
+                <div className="scroll-top text-9xl text-black opacity-10  mb-12">
                     Certification / Certification
                 </div>
-                <div className="langs text-9xl text-black opacity-10 ">
+                <div className="scroll-bottom text-9xl text-black opacity-10 ">
                     <p>Certification / Certification</p> 
                 </div>
             </div>

@@ -26,24 +26,37 @@ module.exports = {
         light: '#4ADE80',
         brownLight: '#95876C',
         sky: '#1F2937',
-        main: '#f3f4f6'
+        main: '#f3f4f6',
+        line: '#E5E7EB',
       },
       maxWidth: {
         544: '544px',
         27: '29rem',
         160: '160px',
+        260: '260px',
+        284: '284px',
+        330: '330px',
         352: '352px',
+        448: '448px',
         486: '486px',
+        544: '544px',
         608: '608px',
         640: '640px',
+        736: '736px',
+        832: '832px',
         928: '928px',
+        1000: '1000px',
+        1088: '1088px',
         1120: '1120px',
         1280: '1280px',
         1440: '1440px',
       },
       height: {
         512: '512px',
-        640: '640px'
+        640: '640px',
+        686: '686px',
+        775: '775px',
+        892: '892px',
       },
       fontFamily: {
         body: 'ff-good-headline-web-pro-com, sans-serif',
@@ -57,8 +70,10 @@ module.exports = {
         14: '76px'
       },
       width:{
-        170: '169px',
+        170: '171px',
+        352: '352px',
         456: '456px',
+        544: '544px',
         608: '608px',
         1024: '1024px',
       },
@@ -67,7 +82,8 @@ module.exports = {
         '27': '43px'
       },
       fontWeight: {
-        'xbold' : '900'
+        'xbold' : '900',
+        '700' : '700',
       },
       margin: {
         '-98' : '-29rem'

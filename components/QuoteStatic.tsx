@@ -1,7 +1,7 @@
 const QuoteStatic = () => {
     return (
         <div id="quote" className="img_bg m-0 text-white relative">
-            <div className="lgt absolute px-6 w-full lg:max-w-928 top-1/2 -translate-y-2/4 left-1/2 -translate-x-2/4">
+            <div className="absolute px-6 w-full lg:max-w-928 top-1/2 -translate-y-2/4 left-1/2 -translate-x-2/4">
                 <div className="mb-16 lg:flex ">
                     <div className="text-6xl mr-10 font-body h-16">
                         <p className="text-10xl font-bold">“</p>

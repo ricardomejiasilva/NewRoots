@@ -33,9 +33,9 @@ const Navbar = () => {
       <>
           <nav className={navClassList.join(" ")}>
               <div className={modalOpen ? "w-full bg-secondary" : "w-full"}>
-                  <div className="max-w-1120 my-0 mx-auto sticky top-0 z-20 px-6 lgg:px-0 ">
+                  <div className="max-w-1120 my-0 mx-auto sticky top-0 z-20 px-6 lgg:px-0 lgg:shadow-md">
 
-                        <div className={modalOpen ? "w-100% flex justify-between bg-secondary" : "w-100% flex justify-between items-center bg-white"}>
+                        <div className={modalOpen ? "w-100% flex justify-between bg-secondary shadow-md" : "w-100% flex justify-between items-center bg-white shadow-md"}>
                             <div onClick={closeModal} className="inline-block cursor-pointer">
                                 <Link href="/" >
                                     <a href={router.pathname}>
@@ -81,7 +81,7 @@ const Navbar = () => {
                                 </div>
 
                                 <div className=" hidden lg:block mr-4">
-                                    <PrimaryBtn link="/" text="Make an Impact" />
+                                    <PrimaryBtn link="/makeanimpact" text="Make an Impact" />
                                 </div>
                             </div>
 
@@ -110,13 +110,13 @@ const Navbar = () => {
                                 <Link href="/whoweare">Who We Are</Link>
                               </li>
                               <li onClick={closeModal} className="pb-8">
-                                  <Link href="/">Our Products</Link>
+                                  <Link href="/products">Our Products</Link>
                               </li>
                               <li onClick={closeModal}  className="pb-8">
-                                  <Link href="/">Resources</Link>
+                                  <Link href="/resources">Resources</Link>
                               </li>
                               <li onClick={closeModal}  className="pb-8">
-                                  <Link href="/">Contact</Link>
+                                  <Link href="/contact">Contact</Link>
                               </li>
                           </ul>
                       </div>
@@ -124,8 +124,10 @@ const Navbar = () => {
               </div>
 
               <div className={modalOpen ? "block" : "hidden"}>
-                  <div className=" bg-white py-6 cursor-pointer">
-                        <p className="text-center text-primary text-lg">Make an Impact</p>
+                  <div onClick={closeModal} className=" bg-white py-6 cursor-pointer">
+                        <Link href="/makeanimpact">
+                            <p className="text-center text-primary text-lg">Make an Impact</p>
+                        </Link>
                     </div> 
               </div>
           </nav>
