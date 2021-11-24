@@ -1,13 +1,14 @@
 import Business from "../components/Business";
 import Social from "../components/Social";
+import Footer from "../components/Footer";
 
 const whoweare = () => {
     return (
         <div>
             <div className="px-6 lgg:px-0 max-w-1120 my-0 mx-auto ">
-                <div className="lg:flex justify-between my-16 md:my-20">
-                    <h1 className="md:mx-auto lg:mx-0 max-w-544 text-secondary text-8xl uppercase font-body font-bold mb-6 line">New Roots, <br/>Planting Trees</h1>
-                    <p className="md:mx-auto lg:mx-0 max-w-md md:max-w-544 lg:max-w-md  text-base lg:text-3xl font-runda self-center mt-9">We’re invested in producing top-quality, sustainable products that will allow your business and the environment to flourish together.</p>
+                <div className="my-16 md:my-20">
+                    <h1 className="md:mx-auto lg:mx-0 max-w-544 text-secondary text-8xl uppercase font-body font-bold mb-6 line lg:inline-block">New Roots, <br/>Planting Trees</h1>
+                    <p className="md:mx-auto lg:mx-0 max-w-md md:max-w-544 lg:max-w-md  text-base lg:text-lg font-runda self-center  mt-9 lg:ml-20 lg:inline-block">We’re invested in producing top-quality, sustainable products that will allow your business and the environment to flourish together.</p>
                 </div>
                 <div>
                     <div className="bg-cover">
@@ -17,7 +18,7 @@ const whoweare = () => {
                 <div className="lg:flex lg:items-center lg:justify-center md:w-full md:max-w-544 lg:max-w-1120 md:pb-10 lg:pb-0 md:mx-auto lg:mx-0 my-16 md:my-16 lg:my-28">
                     <p className="w-full lg:max-w-md text-primary text-2xl lg:text-3xl font-runda self-end md:mx-auto lg:mx-0 mr-10 mb-8">New Roots’ commitment to the environment runs deep.  </p>
 
-                    <p className="md:max-w-544 lg:max-w-md text-lg md:mx-auto lg:mx-0 pt-6 mt-6 md:-mt-9 lg:ml-10">We aim to restore the world by restocking your business. With the support of National Forest Foundation, we promise to plant new trees and foster increased biodiversity by donating a portion of all our profits to offset the damage caused by plastic waste.</p>
+                    <p className="md:max-w-md text-lg md:mx-auto lg:mx-0 pt-6 mt-6 md:-mt-9 lg:ml-10">We aim to restore the world by restocking your business. With the support of National Forest Foundation, we promise to plant new trees and foster increased biodiversity by donating a portion of all our profits to offset the damage caused by plastic waste.</p>
                 </div>
             </div>
 
@@ -84,8 +85,8 @@ const whoweare = () => {
             </div> 
 
             <Business />
-
             <Social />
+            <Footer text="Have any questions?" textBtn="Contact Us" link="/contact" />
         </div>
     );
 }

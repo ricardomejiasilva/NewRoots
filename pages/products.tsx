@@ -4,6 +4,7 @@ import Social from "../components/Social";
 import QuoteStatic from "../components/Quote";
 import FAQ from "../components/FAQ";
 import { Data } from "../components/Data";
+import Footer from "../components/Footer";
 
 const products = () => {
     return (
@@ -167,8 +168,8 @@ const products = () => {
             </div>
 
             <FAQ data={Data} />
-
             <Social/>
+            <Footer text="Have any questions?" textBtn="Make an Impact" link="/makeanimpact" />
         </>
     );
 }

@@ -59,7 +59,7 @@ const ImpactCalc = () => {
                     </button>
                 </div>
                 
-                <div className="bg-main py-6">
+                <div className="max-w-1048 bg-main py-6">
                     <div className="text-white px-2 lgg:px-0 pb-8 text-2xl">
                         <p className="leading-10 text-sky">If I {action} 
                             <input className="bg-transparent w-20 border-b-2 border-sky text-center text-secondary text-2xl font-bold placeholder-secondary focus:outline-none" 
@@ -82,7 +82,7 @@ const ImpactCalc = () => {
                         </p>
                     </div>
 
-                    <div className="bg-main mx-auto max-w-1120 text-center mb-3">
+                    <div className="bg-main mx-auto text-center mb-3 md:px-14">
                         <div className="md:flex md:justify-center px-4">
                             <div className="flex flex-col justify-center bg-white mt w-60 xxs:w-72 h-44 mb-4 mx-auto md:mr-8">
                                 <p className="text-primary text-xs font-bold">SAVE</p>

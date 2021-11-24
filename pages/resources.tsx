@@ -1,7 +1,10 @@
 import ThirdBtn from "../components/btns/ThirdBtn";
+import Footer from "../components/Footer";
 import Link from "next/dist/client/link";
+import { useRouter } from "next/router";
 
 const resources = () => {
+    const router = useRouter()
     return (
         <>
             <div className="max-w-1120 mx-auto mt-14 lg:mt-28  px-6 lgg:px-0">
@@ -26,14 +29,23 @@ const resources = () => {
                         <img className="w-full" src="/img/175.png"/>
                         <div>
                             <p className="pt-6 text-xs text-primary font-bold">SEP 8, 2021 <span className="px-2">•</span > Article</p>
-                            <h4 className="text-2xl lg:text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</h4>
+                            <div className="mt-6">
+                                <Link href="/resources">
+                                    <a href={router.pathname} className="text-2xl lg:text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</a>
+                                </Link>
+                            </div>
+                            
                         </div>
                     </div> 
                     <div className="max-w-544 md:max-w-260 lg:max-w-544 w-full lg:ml-4 lgg:ml-0">
                         <img className="w-full" src="/img/176.png"></img>
                         <div className="">
                             <p className="pt-6 text-xs text-primary font-bold">SEP 8, 2021 <span className="px-2">•</span > Article</p>
-                            <h4 className="text-2xl lg:text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</h4>
+                            <div className="mt-6">
+                                <Link href="/resources">
+                                    <a href={router.pathname} className="text-2xl lg:text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</a>
+                                </Link>
+                            </div>
                         </div>
                     </div> 
                 </div>
@@ -46,27 +58,44 @@ const resources = () => {
                     <div className="max-w-736">
                         <div className="border-b-2 border-line pb-12 mb-12">
                             <p className="text-xs text-primary mt-12 font-bold">SEP 8, 2021 <span className="px-2">•</span > Article</p>
-                            <h4 className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</h4>
+                            <div className="mt-6">
+                                <Link href="/resources">
+                                    <a href={router.pathname} className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</a>
+                                </Link>
+                            </div>
                         </div>
                         <div className="border-b-2 border-line pb-12 mb-12">
                              <p className="text-xs text-primary mt-12 font-bold">SEP 8, 2021 <span className="px-2">•</span> Article</p>
-                            <h4 className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</h4>
+                            <div className="mt-6">
+                                <Link href="/resources">
+                                    <a href={router.pathname} className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</a>
+                                </Link>
+                            </div>
                         </div>
                         <div className="border-b-2 border-line pb-12 mb-12">
                              <p className="text-xs text-primary mt-12 font-bold">SEP 8, 2021 <span className="px-2">•</span> Article</p>
-                            <h4 className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</h4>
+                            <div className="mt-6">
+                                <Link href="/resources">
+                                    <a href={router.pathname} className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</a>
+                                </Link>
+                            </div>
                         </div>
                         <div className="pb-12 mb-6">
                              <p className="text-xs text-primary mt-12 font-bold">SEP 8, 2021 <span className="px-2">•</span> Article</p>
-                            <h4 className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</h4>
+                            <div className="mt-6">
+                                <Link href="/resources">
+                                    <a href={router.pathname} className="text-3xl text-secondary font-bold tracking-normal mt-6">This is a title of an article that might wrap to three lines or more</a>
+                                </Link>
+                            </div>
                         </div>
                         <div>
-                            <ThirdBtn link="/" text="View More" />
+                            <ThirdBtn link="/resources" text="View More" />
                         </div>
                         
                     </div>
                 </div>
             </div>
+            <Footer text="Ready to see the product in action?" textBtn="See Our Products" link="/products" />
         </>
     );
 }

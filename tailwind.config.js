@@ -46,6 +46,7 @@ module.exports = {
         832: '832px',
         928: '928px',
         1000: '1000px',
+        1048: '1048px',
         1088: '1088px',
         1120: '1120px',
         1280: '1280px',
@@ -57,6 +58,7 @@ module.exports = {
         686: '686px',
         775: '775px',
         892: '892px',
+        14200: '14200',
       },
       fontFamily: {
         body: 'ff-good-headline-web-pro-com, sans-serif',
@@ -73,8 +75,10 @@ module.exports = {
         170: '171px',
         352: '352px',
         456: '456px',
+        510: '510px',
         544: '544px',
         608: '608px',
+        640: '640px',
         1024: '1024px',
       },
       fontSize: {

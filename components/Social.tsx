@@ -7,7 +7,7 @@ const Social = () => {
             <div className="max-w-1120 my-0 mx-auto py-16 md:py-24">
                 <h2 className="font-body font-bold text-7xl md:text-8xl text-brownLight mb-7">FOLLOW US</h2>
                 <div className="lg:flex lg:justify-between items-end mb-12">
-                    <h3 className="text-secondary text-2xl md:text-3xl max-w-3xl inline-block mb-6">Stay up to date on our latest tree-planting initiatives, product offerings, and shout-outs to our biggest fans. </h3>
+                    <h3 className="text-secondary text-2xl md:text-3xl max-w-3xl inline-block mb-6">Stay up to date on our latest tree-planting initiatives, product offerings, and shout-outs to our biggest fans.  </h3>
                     <div className="inline-block mb-6">
                         <ThirdBtn link="/" text="Follow New Roots" />
                     </div>

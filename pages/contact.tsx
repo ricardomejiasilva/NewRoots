@@ -1,5 +1,6 @@
 import { Data } from "../components/Data";
 import FAQ2 from "../components/FAQ2";
+import Footer from "../components/Footer";
 
 const contact = () => {
     return (
@@ -25,10 +26,7 @@ const contact = () => {
                             </div>
                             <div className="flex flex-col">
                                 <p className="text-secondary text-2xl mb-4">Find us on social</p>
-                                <a href="/">Facebook</a>
-                                <a href="/">Twitter</a>
                                 <a href="/">Instagram</a>
-                                <a href="/">Pinterest</a>
                             </div>
                         </div>
                         
@@ -77,6 +75,7 @@ const contact = () => {
                 
             </div>
             <FAQ2 data={Data} />
+            <Footer text="Ready to see the product in action?" textBtn="See Our Products" link="/products" />
         </>
     );
 }

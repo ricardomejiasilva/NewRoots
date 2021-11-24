@@ -1,5 +1,5 @@
 import Articles from "../components/Articles";
-
+import Footer from "../components/Footer";
 const resourcessingle = () => {
     return (
         <>
@@ -25,6 +25,7 @@ const resourcessingle = () => {
                 </div>
             </div>
             <Articles bg="bg-white" />
+            <Footer text="Ready to see the product in action?" textBtn="See Our Products" link="/products" />
         </>
     );
 }

@@ -78,10 +78,11 @@ button:focus {
 outline-width: 1px;
   outline-color: #4ADE80;
 }
+
 a:focus {
   outline-width: 1px;
-    outline-color: #4ADE80;
-  }
+  outline-color: #4ADE80;
+}
 
 
 .scroll-top {
@@ -147,4 +148,22 @@ a:focus {
 .stick{
   position: sticky;
   top: 120px;
+}
+
+.back-to-top{
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  top: 590px;
+}
+
+@media only screen and (max-width: 374px) {
+  .back-to-top{
+    top: 490px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .back-to-top{
+    top: 930px;
+  }
 }

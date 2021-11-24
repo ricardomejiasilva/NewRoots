@@ -60,7 +60,7 @@ const ImpactCalcMob = () => {
     return (
         <div className={windowWidth >= 768 ? "roots" : "bg-main" + "roots bg-main w-100% px-6 lgg:px-0 mdd:pt-0 pb-16"}>
             {calcImpact()}
-            <div className="max-w-1120 md:py-16 my-0 mx-auto text-center">
+            <div className="max-w-1120 md:py-16 my-0 mx-auto text-center md:px-6">
                 <h2 className="hidden md:block text-white text-7xl xxs:text-8xl font-body font-bold">CALCULATE YOUR IMPACT</h2>
                 <p className="hidden md:block text-white text-lg mb-6">Choose how many cups a day you use, and timespan, and see how much impact you’d make.</p>
                 <div className="hidden md:block bg-white rounded-2xl text-xs w-170 py-1 my-0 mx-auto mb-6">
@@ -74,7 +74,7 @@ const ImpactCalcMob = () => {
 
                 <div className="block md:hidden bg-secondary rounded-2xl text-xs w-170 py-1 pl-1 pr-1.5 my-0 mx-auto mb-6">
                     <div className="flex">
-                        <button onClick={handleClick} className={client ? "inline-block text-white bg-primary px-3 py-1 rounded-2xl cursor-pointer" :"inline-block text-secondary bg-white px-3 py-1 rounded-2xl cursor-pointer" }>
+                        <button onClick={handleClick} className={client ? "inline-block text-white bg-secondary px-3 py-1 rounded-2xl cursor-pointer" :"inline-block text-secondary bg-white px-3 py-1 rounded-2xl cursor-pointer" }>
                             <span className="pt-1.5" >INDIVIDUALS</span>
                         </button>
                         <button onClick={handleClick} className={client ? "inline-block text-secondary bg-white ml-0.5 px-3 py-1 rounded-2xl cursor-pointer" : "inline-block text-white bg-secondary ml-0.5 px-3 py-1 rounded-2xl cursor-pointer" }>
@@ -84,7 +84,7 @@ const ImpactCalcMob = () => {
                     
                 </div>
                 
-                <div className="bg-main py-6">
+                <div className="bg-main py-6 mx-auto max-w-1048 ">
                     <div className="text-white px-2 lgg:px-0 pb-8 text-2xl">
                         <p className="leading-10 text-secondary md:text-sky">If I {action} 
                             <input className="bg-transparent w-20 border-b-2 border-sky text-center text-secondary text-2xl font-bold placeholder-secondary focus:outline-none" 
@@ -107,7 +107,7 @@ const ImpactCalcMob = () => {
                         </p>
                     </div>
 
-                    <div className="bg-main mx-auto max-w-1120 text-center mb-3">
+                    <div className="bg-main mx-auto text-center mb-3 lg:px-14">
                         <div className="md:flex md:justify-center md:px-4">
                             <div className="flex flex-col justify-center bg-white mt w-full h-44 mb-4 mx-auto md:mr-8">
                                 <p className="text-primary text-xs font-bold">SAVE</p>
