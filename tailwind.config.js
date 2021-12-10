@@ -28,6 +28,8 @@ module.exports = {
         sky: '#1F2937',
         main: '#f3f4f6',
         line: '#E5E7EB',
+        error: '#9B2C2C',
+        errorLight: '#FED7D7',
       },
       maxWidth: {
         544: '544px',

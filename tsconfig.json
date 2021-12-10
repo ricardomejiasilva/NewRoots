@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/FAQItem.tsx", "pages/articles/[articles].tsx"  ],
+, "components/FAQItem.tsx", "pages/articles/[articles].tsx", "hooks/validateLogin.tsx"  ],
   "exclude": [
     "node_modules"
   ]

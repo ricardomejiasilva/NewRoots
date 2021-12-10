@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<h1>Instagram Feed</h1>
+    <div id="instafeed" style="text-align: center;"></div>
+
+
+    <script type="text/javascript" src="./instafeed.min.js" ></script>
+    
+    <!-- Access Token -->
+    <script src="https://ig.instant-tokens.com/users/9f572d77-11a1-47fc-8ebc-28808ff23985/instagram/17841400947948256/token.js?userSecret=hhjcqupcav05s796zz570u"></script>
+    
+ 
+    <script type="text/javascript">
+        console.log(Instafeed)
+        let currentCount = 0;
+        let feed = new Instafeed({
+        accessToken: InstagramToken, 
+        limit: 20,
+        before: function() {
+        currentCount = 0;
+        },
+        filter: function(image) {
+            let shouldDisplay = (currentCount < 4);
+
+            if (shouldDisplay) {
+                if ((image.type === 'video')) {
+                currentCount += 1;
+                console.log(image);
+                } else {
+                shouldDisplay = false;
+                }
+            }
+            return shouldDisplay;
+        },
+        template: '<a href="{{link}}"><img class="image" title="{{caption}}" src="{{image}}" /></a>'
+        });
+        feed.run();
+    </script> 
+
+    <script src="./main.js"></script>
+</body>
+</body>
+</html>

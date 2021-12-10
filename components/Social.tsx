@@ -1,5 +1,6 @@
-import Image from "next/dist/client/image";
+import Script from 'next/script'
 import ThirdBtn from "./btns/ThirdBtn";
+import Instafeed from "../js/instafeed.min.js"
 
 const Social = () => {
     return (
@@ -12,6 +13,8 @@ const Social = () => {
                         <ThirdBtn link="/" text="Follow New Roots" />
                     </div>
                 </div>
+                <h1 >Instagram Feed</h1>
+                <div id="instafeed"></div>
 
                 <div className="lg:flex lg:justify-between text-center">
                     <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block mr-4 lg:mr-0 mb-2">
@@ -29,6 +32,51 @@ const Social = () => {
                     
                 </div>
             </div>
+
+
+
+            <Script
+                src="https://ig.instant-tokens.com/users/9f572d77-11a1-47fc-8ebc-28808ff23985/instagram/17841400947948256/token.js?userSecret=hhjcqupcav05s796zz570u"
+                onLoad={() => {
+                    return console.log(InstagramToken);
+                    
+                }}
+            />
+
+            <Script 
+                src="../js/instafeed.min.js"
+                onLoad={() => {
+                    console.log("hello");
+                    
+                    let currentCount = 0;
+                    console.log(InstagramToken);
+                    let feed = new Instafeed({
+                    accessToken: InstagramToken, 
+                    limit: 20,
+                    before: function() {
+                    currentCount = 0;
+                    },
+                    filter: function(image) {
+                        let shouldDisplay = (currentCount < 4);
+
+                        if (shouldDisplay) {
+                            if ((image.type === 'image')) {
+                            currentCount += 1;
+                            console.log(image);
+                            } else {
+                            shouldDisplay = false;
+                            }
+                        }
+                        return shouldDisplay;
+                    },
+                    template: '<a href="{{link}}"><img class="image" title="{{caption}}" src="{{image}}" /></a>'
+                    });
+                    feed.run();
+                }}
+            />
+            <Script
+                
+            />
         </div>
     );
 }
