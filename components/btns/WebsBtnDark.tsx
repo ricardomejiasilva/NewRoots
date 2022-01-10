@@ -13,7 +13,7 @@ const WebsBtnDark = () => {
                 </svg>
             </div>
 
-            <div className="inline-block pb-2">
+            <div className="inline-block pb-2 ">
                 <p className="text-xs font-bold h-3">BUY AT</p>
                 <p className="text-lg h-4 font-bold">WebstaurantStore</p>
             </div>

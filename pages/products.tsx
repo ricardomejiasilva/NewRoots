@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 const products = () => {
     return (
         <>
-            <div className="px-6 lgg:px-0 max-w-1120 my-0 mx-auto">
+            <div className="px-6 lgg1:px-0 max-w-1120 my-0 mx-auto">
                 <div className="pt-4 md:pt-6 lg:pt-24 lg:pb-16 mdd:flex justify-between font-runda">
                     <div className="max-w-lg md:max-w-full lg:max-w-lg mb-20 md:mx-auto lg:mx-0">
                         <div className="business-bg lg:hidden mb-10 md:mb-20">
@@ -39,7 +39,7 @@ const products = () => {
                 </div>
             </div>
             
-            <div className=" max-w-1440 px-6 lgg:px-0  mx-auto md:py-16 lg:py-0">
+            <div className=" max-w-1440 px-6 lgg1:px-0  mx-auto md:py-16 lg:py-0">
                 <div className="h-512 relative mr-0">
                     <div className=" max-w-1280 lgg:absolute right-0">
                         <div className=" lg:bg-white lg:py-32 lg:pl-20 lg:pr-20 lgg:pr-40">
@@ -59,8 +59,8 @@ const products = () => {
             </div>
 
 
-            <div className="px-6 lgg:px-0 py-6 md:py-16 lg:py-28 max-w-1120 mx-auto">                 
-                <div className="md:flex md:flex-col lg:flex-row items-end lg:items-center lg:text-left lg:px-20 lgg:px-0 md:max-w-544 lg:max-w-full md:mx-auto">
+            <div className="px-6 lgg1:px-0 py-6 md:py-16 lg:py-28 max-w-1120 mx-auto">                 
+                <div className="md:flex md:flex-col lg:flex-row items-end lg:items-center lg:text-left lg:px-20 lgg1:px-0 md:max-w-544 lg:max-w-full md:mx-auto">
                     <div className="block lg:hidden mb-16 md:w-full">
                         <img className="md:w-full" src="/img/172.png" alt="" />
                     </div>
@@ -75,7 +75,7 @@ const products = () => {
                 </div>
             </div>
 
-            <div className=" px-6 lgg:px-0 max-w-1440 mx-auto mb-12 xxs:mb-0 pt-6 relative">
+            <div className=" px-6 lgg1:px-0 max-w-1440 mx-auto mb-12 xxs:mb-0 pt-6 relative">
                 <div className="h-512 relative">
                     <div className="max-w-1280 lgg:absolute left-0">
                         <div className="lg:bg-white lg:py-28 lg:px-16 lgg:px-40">
@@ -94,8 +94,8 @@ const products = () => {
                 </div>
             </div>
 
-            <div className="px-6 lgg:px-0 py-12 pt-6 md:py-16 lg:py-28 max-w-1120 mx-auto">                 
-                <div className="md:flex md:flex-col md:max-w-544 lg:max-w-full md:mx-auto lg:flex-row  lg:items-center lg:text-left pt-6 md:pt-16 lg:pt-0 lg:px-20 lgg:px-0">
+            <div className="px-6 lgg1:px-0 py-12 pt-6 md:py-16 lg:py-28 max-w-1120 mx-auto">                 
+                <div className="md:flex md:flex-col md:max-w-544 lg:max-w-full md:mx-auto lg:flex-row  lg:items-center lg:text-left pt-6 md:pt-16 lg:pt-0 lg:px-20 lgg1:px-0">
                     <div className="block lg:hidden mt-12 md:mt-0 mb-16 w-full">
                         <img className="w-full" src="/img/169.png" alt="" />
                     </div>
@@ -114,7 +114,7 @@ const products = () => {
             </div>
 
             <div className="bg-white">
-                <div className="px-6 lgg:px-0 max-w-1120 text-center mx-auto py-20 md:py-32">
+                <div className="px-6 lgg1:px-0 max-w-1120 text-center mx-auto py-20 md:py-32">
                     <h2 className="font-body font-bold text-7xl md:text-8xl text-brownLight mb-16">MARKETS WE SERVE</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
                         <div className="text-center mb-6 ">
@@ -146,7 +146,7 @@ const products = () => {
             </div>
                 
             <QuoteStatic/>
-            <div className="px-6 lgg:px-0 max-w-1120 my-0 mx-auto">
+            <div className="px-6 lgg1:px-0 max-w-1120 my-0 mx-auto">
                 <div className="py-16 lg:py-32 md:pb-0 lg:flex lg:justify-between items-end">
                     <div>
                         <h2 className="font-body font-bold text-7xl md:text-8xl text-brownLight mb-6">GET THE PRODUCT</h2>

@@ -34,7 +34,7 @@ export default function index() {
                 </div>         
             </div>
 
-            <div className="px-6 lgg:px-0 md:flex md:justify-between">
+            <div className="px-6 lgg1:px-0 md:flex md:justify-between">
                 <div className="text-center w-64 md:w-72 m-auto mb-8">
                     <h3 className="font-body font-bold text-8xl md:text-9xl text-secondary">128</h3>
                     <p className="text-lg leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci interdum proin.</p>

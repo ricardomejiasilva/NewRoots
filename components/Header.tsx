@@ -3,7 +3,7 @@ import ThirdBtn from './btns/ThirdBtn';
 
 const Header = () => {
     return (
-        <div className="px-6 lgg:px-0">
+        <div className="px-6 lgg1:px-0">
             <div className="max-w-1120 my-0 mx-auto py-24 mdd:flex justify-between font-runda">
                 <div className="max-w-lg mb-20">
                     <h1 className="line font-body font-extrabold text-8xl md:text-9xl uppercase text-secondary max-w-27  pb-8 leading-10 tracking-wide">planted 10,000 trees and counting</h1>

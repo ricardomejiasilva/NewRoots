@@ -58,7 +58,7 @@ const ImpactCalcMob = () => {
     }, [])
 
     return (
-        <div className={windowWidth >= 768 ? "roots" : "bg-main" + "roots bg-main w-100% px-6 lgg:px-0 mdd:pt-0 pb-16"}>
+        <div className={windowWidth >= 768 ? "roots" : "bg-main" + "roots bg-main w-100% px-6 lgg1:px-0 mdd:pt-0 pb-16"}>
             {calcImpact()}
             <div className="max-w-1120 md:py-16 my-0 mx-auto text-center md:px-6">
                 <h2 className="hidden md:block text-white text-7xl xxs:text-8xl font-body font-bold">CALCULATE YOUR IMPACT</h2>
@@ -85,7 +85,7 @@ const ImpactCalcMob = () => {
                 </div>
                 
                 <div className="bg-main py-6 mx-auto max-w-1048 ">
-                    <div className="text-white px-2 lgg:px-0 pb-8 text-2xl">
+                    <div className="text-white px-2 lgg1:px-0 pb-8 text-2xl">
                         <p className="leading-10 text-secondary md:text-sky">If I {action} 
                             <input className="bg-transparent w-20 border-b-2 border-sky text-center text-secondary text-2xl font-bold placeholder-secondary focus:outline-none" 
                             type="text" 

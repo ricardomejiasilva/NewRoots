@@ -1,6 +1,6 @@
 const Benefits = () => {
     return (
-        <div className="px-6 lgg:px-0">
+        <div className="px-6 lgg1:px-0">
             <div className="overflow-hidden py-24">
                 <div className="scroll-top text-9xl text-black opacity-10  mb-12">
                     Certification / Certification

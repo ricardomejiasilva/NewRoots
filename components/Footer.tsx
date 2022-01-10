@@ -4,7 +4,7 @@ import ResBtn from './btns/ResBtn';
 import PrimaryBtnLight from './btns/PrimaryBtnLight';
 const Footer = ({text, textBtn, link} : {text : string, textBtn: string, link : string}) => {
     return (
-        <div className="roots w-100% px-6 lgg:px-0">
+        <div className="roots w-100% px-6 lgg1:px-0">
             <div className=" pt-16 md:pt-28 pb-8 md:pb-16 max-w-1120 my-0 mx-auto">
                 <div className="text-center max-w-lg my-0 mx-auto pb-24">
                     <h3 className="font-body font-bold text-7xl text-white pb-6 uppercase md:pb-14">{text}</h3>

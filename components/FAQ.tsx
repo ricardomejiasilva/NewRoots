@@ -29,7 +29,7 @@ const FAQ = ({ data }) => {
   });
 
   return (
-    <div className="roots w-100% px-6 lgg:px-0">
+    <div className="roots w-100% px-6 lgg1:px-0">
         <div className="py-20 lg:py-28 max-w-1120 my-0 mx-auto lg:flex justify-between w-full">
             <div className="lg:inline-block mb-14 w-72 lg:w-80 md:mx-auto lg:mx-0">
                 <h2 className=" text-white text-7xl md:text-center lg:text-left lg:text-8xl uppercase font-body font-bold leading-11">frequently asked questions</h2>

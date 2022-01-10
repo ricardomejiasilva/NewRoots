@@ -8,7 +8,7 @@ const legal = () => {
     return (
         <>
             <div id="top"></div>
-            <div  className="lg:max-w-1120 md:max-w-544 lg:max-w-1120my-0 mx-auto px-6 lgg:px-0 relative">
+            <div  className="lg:max-w-1120 md:max-w-544 lg:max-w-1120my-0 mx-auto px-6 lgg1:px-0 relative">
 
                 <h1 className="font-body font-bold text-8xl md:text-9xl text-secondary pt-12 md:mt-16 lg:mt-32 md:mb-16 lg:mb-20">POLICIES</h1>
                 

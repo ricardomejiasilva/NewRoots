@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const whoweare = () => {
     return (
         <div>
-            <div className="px-6 lgg:px-0 max-w-1120 my-0 mx-auto ">
+            <div className="px-6 lgg1:px-0 max-w-1120 my-0 mx-auto ">
                 <div className="my-16 md:my-20">
                     <h1 className="md:mx-auto lg:mx-0 max-w-544 text-secondary text-8xl uppercase font-body font-bold mb-6 line lg:inline-block">New Roots, <br/>Planting Trees</h1>
                     <p className="md:mx-auto lg:mx-0 max-w-md md:max-w-544 lg:max-w-md  text-base lg:text-lg font-runda self-center  mt-9 lg:ml-20 lg:inline-block">We’re invested in producing top-quality, sustainable products that will allow your business and the environment to flourish together.</p>
@@ -22,7 +22,7 @@ const whoweare = () => {
                 </div>
             </div>
 
-             <div className="roots w-100% px-6 lgg:px-0">
+             <div className="roots w-100% px-6 lgg1:px-0">
                 <div className="py-20 lg:py-28 max-w-1120 w-full my-0 mx-auto lg:flex justify-between">
                     <div className="lg:inline-block mb-14 w-72 md:w-72 lg:w-96 ">
                         <h2 className=" text-white text-7xl lg:text-8xl uppercase font-body font-bold leading-11">The values we embrace</h2>
@@ -59,7 +59,7 @@ const whoweare = () => {
                     <p>Certification / Certification</p> 
                 </div>
             </div>
-            <div className="px-6 lgg:px-0">
+            <div className="px-6 lgg1:px-0">
                 <div className="max-w-1120 my-0 mx-auto lg:pt-16 pb-24 lg:pb-32">
                     <div className="my-20 text-center">
                         <div className="z-0 inline-block">

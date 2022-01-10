@@ -33,7 +33,7 @@ const Navbar = () => {
       <>
           <nav className={navClassList.join(" ")}>
               <div className={modalOpen ? "w-full bg-secondary" : "w-full"}>
-                  <div className="max-w-1120 my-0 mx-auto sticky top-0 z-20 px-6 lgg:px-0 lgg:shadow-md">
+                  <div className="max-w-1120 my-0 mx-auto sticky top-0 z-20 px-6 lgg1:px-0 lgg1:shadow-md">
 
                         <div className={modalOpen ? "w-100% flex justify-between bg-secondary shadow-md" : "w-100% flex justify-between items-center bg-white shadow-md"}>
                             <div onClick={closeModal} className="inline-block cursor-pointer">

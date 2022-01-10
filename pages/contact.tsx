@@ -70,7 +70,7 @@ const contact = () => {
 
     return (
         <>
-            <div className="md:max-w-544 lg:max-w-1120 mx-auto mt-14 md:mt-18 lg:mt-28 px-6 lgg:px-0">
+            <div className="md:max-w-544 lg:max-w-1120 mx-auto mt-14 md:mt-18 lg:mt-28 px-6 lgg1:px-0">
                 <div className="lg:flex justify-between mb-16 lg:mb-32">
                     <h1 className="text-8xl text-secondary font-body font-bold mr-36 mb-6">CONTACT</h1>
                     <p className="text-primary text-xl lg:text-3xl">Questions about our products? Interested in learning more? Please use the form below to get in contact with us.</p>

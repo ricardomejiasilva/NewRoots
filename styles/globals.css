@@ -115,6 +115,12 @@ a:focus {
   top: 590px;
 }
 
+.ig-img{
+  width: 256px;
+  height: 256px;
+  display: inline-block;
+}
+
 @media only screen and (max-width: 374px) {
   .back-to-top{
     top: 490px;
@@ -126,3 +132,41 @@ a:focus {
   }
 }
 
+@media only screen and (max-width: 1120px) {
+  .ig-img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .ig-img{
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ig-img{
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width: 343px) {
+  .ig-img{
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    margin: 10px;
+  }
+}

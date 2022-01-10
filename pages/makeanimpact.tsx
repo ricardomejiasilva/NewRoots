@@ -1,12 +1,12 @@
 import Articles from "../components/Articles";
 import BtnWhite from "../components/btns/BtnWhite";
 import Footer from "../components/Footer";
-import ImpactCalcMob from "../components/ImpactCalcMob";
+import ImpactCalc from "../components/ImpactCalc";
 
 const makeanimpact = () => {
     return (
         <>
-            <div className="px-6 lgg:px-0">
+            <div className="px-6 lgg1:px-0">
                 <div className="max-w-1120 my-0 mx-auto pt-6 lg:py-24 mdd:flex justify-between font-runda">
                     <div className="lg:hidden bg-cover mb-10">
                         <div className="h-80"></div>
@@ -27,12 +27,11 @@ const makeanimpact = () => {
                 </div>
             </div>
 
-            <div className="block ">
-                {/* <ImpactCalcMob /> */}
-            </div>
+
+            <ImpactCalc />
             
 
-            <div className="lg:py-28 max-w-1120 my-0 mx-auto px-6 lgg:px-0">
+            <div className="lg:py-28 max-w-1120 my-0 mx-auto px-6 lgg1:px-0">
                 <div className="lgg:flex justify-between">
                     <div className="bg-coffee w-full lgg:w-544 md:mx-auto lgg:mx-0">
                         <div className=" h-80 lgg:w-544 lgg:h-96 "></div>
@@ -63,7 +62,7 @@ const makeanimpact = () => {
                 </div>
             </div>
 
-            <div className="roots w-100% px-6 lgg:px-0 py-32">
+            <div className="roots w-100% px-6 lgg1:px-0 py-32">
                 <div className="max-w-1120 my-0 mx-auto">
                     <div className="lg:inline-block mb-14 md:mx-auto lg:mx-0">
                         <h2 className=" text-white text-7xl md:text-left lg:text-left lg:text-8xl uppercase font-body font-bold leading-11">ways to take action</h2>
