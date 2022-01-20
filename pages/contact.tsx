@@ -39,7 +39,7 @@ const contact = () => {
         }
     }
 
-    const { handleChange, handleSubmit, setValues, values, errors } = useForm(submit, validate);
+    const { handleChange, handleSubmit, setValues, values, errors } : any = useForm(submit, validate);
     
     function submit() {
         console.log('Success');
@@ -62,10 +62,10 @@ const contact = () => {
         }
     }
  
-    if(nameActive) errors.name = null
-    if(emailActive) errors.email = null
-    if(phoneActive) errors.phone = null
-    if(messageActive) errors.message = null
+    if(nameActive) errors.name = ""
+    if(emailActive) errors.email = ""
+    if(phoneActive) errors.phone = ""
+    if(messageActive) errors.message = ""
 
 
     return (
