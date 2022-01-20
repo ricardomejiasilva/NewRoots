@@ -62,10 +62,10 @@ const contact = () => {
         }
     }
  
-    if(nameActive) errors.name = ""
-    if(emailActive) errors.email = ""
-    if(phoneActive) errors.phone = ""
-    if(messageActive) errors.message = ""
+    if(nameActive) errors.name = null
+    if(emailActive) errors.email = null
+    if(phoneActive) errors.phone = null
+    if(messageActive) errors.message = null
 
 
     return (
