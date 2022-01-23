@@ -107,7 +107,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={() => setNameActive(true)}
                                         onBlur={() => setNameActive(false)}
-                                        className={`${errors.name ? "text-error  placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
+                                        className={`${errors.name ? "text-error  placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
                                     />
                                 </div>
                                 {errors.name && <p className="text-sm text-error pl-2">{errors.name}</p>}
@@ -115,10 +115,8 @@ const contact = () => {
 
                             <div className="mb-8">
                                 <div className={`${errors.email && "bg-errorLight"} mb-2`}>
-                                    <label className={`${emailActive || values.email.length > 0 ? "text-sky" : "hidden"}  text-lg pl-2`} htmlFor="email">Email</label>
+                                    <label className={`${emailActive || values.email.length > 0 ? "text-sky" : "hidden"} ${errors.email ? "text-error" : ""} text-lg pl-2`} htmlFor="email">Email</label>
 
-                                    <label className={`${emailActive  ? "text-sky" : values.email.length > 0 ? 'text-sky' : errors.email ? 'hidden' : 'hidden'}  text-lg pl-2`} htmlFor="email">Email</label>
-                                    
                                     <input 
                                         type="email" 
                                         placeholder="Email"
@@ -129,7 +127,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={() => setEmailActive(true)}
                                         onBlur={() => setEmailActive(false)}
-                                        className={`${errors.email ? "text-error placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
+                                        className={`${errors.email ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
                                     />
                                 </div>
                                 {errors.email && <p className="text-sm text-error pl-2">{errors.email}</p>}
@@ -190,7 +188,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={handleMessage}
                                         onBlur={handleMessageBlur}
-                                        className={`${errors.message ? "text-error placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full  text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent  pt-2 pl-2 h-10` }
+                                        className={`${errors.message ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full  text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent  pt-2 pl-2 h-10` }
                                     ></textarea>
                                 </div>
                                 {errors.message && <p className="text-sm text-error pl-2">{errors.message}</p>}
