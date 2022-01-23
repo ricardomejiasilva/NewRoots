@@ -18,7 +18,7 @@ const whoweare = () => {
                 <div className="lg:flex lg:items-center lg:justify-center md:w-full md:max-w-544 lg:max-w-1120 md:pb-10 lg:pb-0 md:mx-auto lg:mx-0 my-16 md:my-16 lg:my-28">
                     <p className="w-full lg:max-w-md text-primary text-2xl lg:text-3xl font-runda self-end md:mx-auto lg:mx-0 mr-10 mb-8">New Roots’ commitment to the environment runs deep.  </p>
 
-                    <p className="md:max-w-md text-lg md:mx-auto lg:mx-0 pt-6 mt-6 md:-mt-9 lg:ml-10">We aim to restore the world by restocking your business. With the support of National Forest Foundation, we promise to plant new trees and foster increased biodiversity by donating a portion of all our profits to offset the damage caused by plastic waste.</p>
+                    <p className="md:max-w-md text-lg lg:mx-auto lg:mx-0 pt-6 mt-6 md:-mt-9 lg:ml-10">We aim to restore the world by restocking your business. With the support of National Forest Foundation, we promise to plant new trees and foster increased biodiversity by donating a portion of all our profits to offset the damage caused by plastic waste.</p>
                 </div>
             </div>
 
@@ -83,8 +83,10 @@ const whoweare = () => {
                     </div>
                 </div>
             </div> 
-
-            <Business />
+            <div className="p-hide">
+                <Business />
+            </div>
+            
             <Social />
             <Footer text="Have any questions?" textBtn="Contact Us" link="/contact" />
         </div>

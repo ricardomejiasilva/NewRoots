@@ -82,19 +82,6 @@ const contact = () => {
                             <p className="text-secondary text-2xl mb-4">Say Hello!</p>
                             <p className="text-lg">Due to the high volume of inquiries, our response times have increased slightly, but we strive to get back to you within two business days. We appreciate your patience!</p>
                         </div>
-                        <div className="hidden md:flex lg:flex-col">
-                            <div className="md:mr-10 lg:mr-0 flex flex-col mb-10">
-                                <p className="text-secondary text-2xl mb-4">For specific questions</p>
-                                <a href="/">FAQ</a>
-                                <a href="/">Warranty</a>
-                                <a href="/">Returns</a>
-                            </div>
-                            <div className="flex flex-col">
-                                <p className="text-secondary text-2xl mb-4">Find us on social</p>
-                                <a href="/">Instagram</a>
-                            </div>
-                        </div>
-                        
                     </div>
                     
                     <div className=" md:w-96 lg:w-full max-w-544" >
@@ -120,7 +107,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={() => setNameActive(true)}
                                         onBlur={() => setNameActive(false)}
-                                        className={`${errors.name ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
+                                        className={`${errors.name ? "text-error  placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
                                     />
                                 </div>
                                 {errors.name && <p className="text-sm text-error pl-2">{errors.name}</p>}
@@ -142,7 +129,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={() => setEmailActive(true)}
                                         onBlur={() => setEmailActive(false)}
-                                        className={`${errors.email ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
+                                        className={`${errors.email ? "text-error placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
                                     />
                                 </div>
                                 {errors.email && <p className="text-sm text-error pl-2">{errors.email}</p>}
@@ -163,7 +150,7 @@ const contact = () => {
                                         onFocus={() => setPhoneActive(true)}
                                         onBlur={() => setPhoneActive(false)}
                                         onChange={(e) => handleInput(e)} 
-                                        className={`${errors.phone ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
+                                        className={`${errors.phone ? "text-error placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
                                     />
                                 </div>
                                 {errors.phone && <p className="text-sm text-error pl-2">{errors.phone}</p>}
@@ -184,7 +171,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={() => setCompanyActive(true)}
                                         onBlur={() => setCompanyActive(false)}
-                                        className={`${errors.company ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
+                                        className={`${errors.company ? "text-error placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full border-b-2 py-2 border-line text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent pl-2` }
                                     />
                                 </div>
                                 {errors.company && <p className="text-sm text-error pl-2">{errors.company}</p>}
@@ -203,7 +190,7 @@ const contact = () => {
                                         onChange={handleChange}
                                         onFocus={handleMessage}
                                         onBlur={handleMessageBlur}
-                                        className={`${errors.message ? "text-error placeholder-error" : "text-secondary placeholder-secondary"} bg-transparent w-full  text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent  pt-2 pl-2 h-10` }
+                                        className={`${errors.message ? "text-error placeholder-red-900" : "text-secondary placeholder-secondary"} bg-transparent w-full  text-left text-xl md:text-2xl placeholder-secondary focus:outline-none focus:placeholder-transparent  pt-2 pl-2 h-10` }
                                     ></textarea>
                                 </div>
                                 {errors.message && <p className="text-sm text-error pl-2">{errors.message}</p>}

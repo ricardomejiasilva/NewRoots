@@ -67,17 +67,32 @@ const ImpactCalc = () => {
                             value={cups}
                             onChange={(e) => setCups(e.target.value)}
                             name="cups" 
+                            maxLength="4"
+                            pattern="\d{4}"
                             id="cups" />
-                            New Roots 12oz cup per day, in a 
-                                <select className="select-menu bg-transparent w-32 border-b-2 border-secondary text-center text-secondary text-2xl font-bold placeholder-secondary  outline-light"  
-                                value={time} 
-                                onChange={(e) => setTime(e.target.value)} 
-                                name="time" 
-                                id="time" >
-                                    <option className="!text-sm" defaultValue="year" value="year">YEAR</option>
-                                    <option className="!text-sm" value="month">MONTH</option>
-                                    <option className="!text-sm" value="week">WEEK</option>
-                                </select>
+
+                            New Roots
+                            
+                            <select className="select-menu bg-transparent w-40 border-b-2 border-secondary text-center text-secondary text-2xl font-bold placeholder-secondary outline-light mx-2"  
+                            name="time" 
+                            id="time" >
+                                <option className="!text-sm" defaultValue="year" value="year">8 OZ CUPS</option>
+                                <option selected className="!text-sm" value="month">12 OZ CUPS</option>
+                                <option className="!text-sm" value="week">16 OZ CUPS</option>
+                            </select>
+                             
+                             per day, in a 
+
+                            <select className="select-menu bg-transparent w-32 border-b-2 border-secondary text-center text-secondary text-2xl font-bold placeholder-secondary  outline-light"  
+                            value={time} 
+                            onChange={(e) => setTime(e.target.value)} 
+                            name="time" 
+                            id="time" >
+                                <option className="!text-sm" defaultValue="year" value="year">YEAR</option>
+                                <option className="!text-sm" value="month">MONTH</option>
+                                <option className="!text-sm" value="week">WEEK</option>
+                            </select>
+
                             , I will:
                         </p>
                     </div>

@@ -42,10 +42,10 @@ const Quote = () => {
                     <div className="text-6xl mr-10 font-body h-16">
                         <p className="text-10xl font-bold">“</p>
                     </div>
-                    <h2 className="text-3xl md:text-27 leading-13 md:leading-11 tracking-wider pt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget non a elit duis et senectus nulla arcu.</h2>
+                    <h2 className="text-3xl md:text-27 leading-13 md:leading-11 tracking-wider pt-6">Global forests removed about one-third of fossil fuel emissions annually from 1990 to 2007.</h2>
                 </div>
                 <div>
-                    <p className="text-right -mt-6 text-lg">- National Forest Foundation</p>
+                    <p className="text-right -mt-6 text-lg">- U.S. Forest Service</p>
                 </div>
             </div>
         </section>

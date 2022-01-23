@@ -22,7 +22,7 @@ const Social = () => {
         {/* Instagram Feed */}
         <div id="instafeed" className="lg:flex lg:justify-between text-center"></div>
 
-        {/* <div className="lg:flex lg:justify-between text-center">
+        <div className="lg:flex lg:justify-between text-center">
           <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block mr-4 lg:mr-0 mb-2">
             <img src="/img/93.png"></img>
           </div>
@@ -35,14 +35,13 @@ const Social = () => {
           <div className="w-28 xxs:w-32 md:w-40 lg1:w-56 lgg:w-64 inline-block md:mr-4 lg:mr-0 mb-2">
             <img src="/img/96.png"></img>
           </div>
-        </div> */}
+        </div>
       </div>
 
-      <Script
+      {/* <Script
         src="https://ig.instant-tokens.com/users/9f572d77-11a1-47fc-8ebc-28808ff23985/instagram/17841400947948256/token.js?userSecret=hhjcqupcav05s796zz570u"
         onLoad={() => {
           let token = window.InstagramToken;
-          console.log(token);
           // Instafeed init
           let currentCount = 0;
           let feed = new Instafeed({
@@ -57,7 +56,6 @@ const Social = () => {
               if (shouldDisplay) {
                 if (image.type === 'image') {
                   currentCount += 1;
-                  console.log({ image });
                 } else {
                   shouldDisplay = false;
                 }
@@ -68,9 +66,8 @@ const Social = () => {
             '<a href="{{link}}"><img class="ig-img" src="{{image}}" /></a>',
           });
           feed.run();
-          // return console.log(token);
         }}
-      />
+      /> */}
     </div>
   );
 };

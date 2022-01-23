@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "digit-roll-react": "^1.1.0",
     "instafeed.js": "^2.0.0",
     "instagram-web-api": "^2.2.2",
     "next": "11.1.2",

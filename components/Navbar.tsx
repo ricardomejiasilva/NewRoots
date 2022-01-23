@@ -34,8 +34,7 @@ const Navbar = () => {
           <nav className={navClassList.join(" ")}>
               <div className={modalOpen ? "w-full bg-secondary" : "w-full"}>
                   <div className="max-w-1120 my-0 mx-auto sticky top-0 z-20 px-6 lgg1:px-0 lgg1:shadow-md">
-
-                        <div className={modalOpen ? "w-100% flex justify-between bg-secondary shadow-md" : "w-100% flex justify-between items-center bg-white shadow-md"}>
+                        <div className={modalOpen ? "w-100% flex justify-between bg-secondary" : "w-100% flex justify-between items-center bg-white shadow-md"}>
                             <div onClick={closeModal} className="inline-block cursor-pointer">
                                 <Link href="/" >
                                     <a href={router.pathname}>
@@ -94,7 +93,7 @@ const Navbar = () => {
                                   </svg>
                               </button>
                               <button aria-label="close" className={modalOpen ? "block" : "hidden"} onClick={handleClick}>
-                                  <svg className="ml-8 mt-4" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg className="ml-7" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <rect x="1.41406" y="0.14209" width="20" height="2" transform="rotate(45 1.41406 0.14209)" fill="white"/>
                                       <rect x="0.414062" y="14.1421" width="20" height="2" transform="rotate(-45 0.414062 14.1421)" fill="white"/>
                                   </svg>

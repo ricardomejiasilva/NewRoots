@@ -29,7 +29,7 @@ const Footer = ({text, textBtn, link} : {text : string, textBtn: string, link : 
                         <p className="mb-2 md:mb-0">©2021, New Roots, Inc.  All Rights Reserved.</p>
                         <ul className="flex flex-wrap md:flex-nowrap">
                             <li className="pr-3 mb-2 md:mb-0"><Link href="/">Accessibility</Link></li>
-                            <li className="pr-3"><Link href="/Legal">Privacy</Link></li>
+                            <li className="pr-3"><Link href="/legal">Privacy</Link></li>
                             <li className="pr-3"><Link href="/">Terms of Use</Link></li>
                             <li><Link href="/">Security</Link></li>
                         </ul>
@@ -41,3 +41,5 @@ const Footer = ({text, textBtn, link} : {text : string, textBtn: string, link : 
 }
 
 export default Footer;
+
+

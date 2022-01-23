@@ -24,14 +24,21 @@ a {
 }
 
 .bg-cover{
-  background-image: url('/img/204.png');
+  background-image: url('/img/main.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-found{
+  background-image: url('https://i.postimg.cc/7LrGbXNQ/Rectangle-1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bg-tree{
-  background-image: url('/img/Trees.png');
+  background-image: url('/img/main-trees.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,7 +64,7 @@ a {
 }
 
 .business-bg{
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/coffee.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/cups.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom 50% left 50%;
@@ -92,9 +99,11 @@ a:focus {
 .bullet li { 
   font-size: 10px;
 }
+
 .bullet span { 
   font-size: 18px;
 }
+
 .bottom {
   padding-bottom: 20px;
 }
@@ -112,7 +121,7 @@ a:focus {
   display: flex;
   justify-content: end;
   position: sticky;
-  top: 590px;
+  top: 90%;
 }
 
 .ig-img{
@@ -121,14 +130,46 @@ a:focus {
   display: inline-block;
 }
 
-@media only screen and (max-width: 374px) {
-  .back-to-top{
-    top: 490px;
+.DigitRoll__Out {
+  display: block !important;
+  width: 500px;
+  height: 200px;
+
+}
+
+.DigitRoll {
+  font-size: 256px;
+  color: #15803D;
+  border: none !important;
+  justify-content: center;
+  height: 205px !important;
+}
+ 
+.DigitRoll__Cell {
+  margin: 0 30px;
+  height: 205px;
+}
+ 
+.DigitRoll__Divider {
+  font-size: 25px;
+  color: black;
+  padding: 0 6px;
+  
+}
+
+.DigitRoll__Slice {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .p-hide p{
+    display: none;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .back-to-top{
-    top: 930px;
+    top: 92%;
   }
 }
 
@@ -140,7 +181,6 @@ a:focus {
     margin: 10px;
   }
 }
-
 
 @media only screen and (max-width: 1023px) {
   .ig-img{
@@ -159,8 +199,6 @@ a:focus {
     margin: 10px;
   }
 }
-
-
 
 @media only screen and (max-width: 343px) {
   .ig-img{

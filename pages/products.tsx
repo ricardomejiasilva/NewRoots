@@ -62,7 +62,7 @@ const products = () => {
             <div className="px-6 lgg1:px-0 py-6 md:py-16 lg:py-28 max-w-1120 mx-auto">                 
                 <div className="md:flex md:flex-col lg:flex-row items-end lg:items-center lg:text-left lg:px-20 lgg1:px-0 md:max-w-544 lg:max-w-full md:mx-auto">
                     <div className="block lg:hidden mb-16 md:w-full">
-                        <img className="md:w-full" src="/img/172.png" alt="" />
+                        <img className="md:w-full" src="/img/plant.png" alt="" />
                     </div>
                     <div className="lg:w-456 mb-6 md:mb-0 ">
                         <h3 className="text-4xl text-secondary font-bold mb-6">Environment First</h3>
@@ -70,7 +70,7 @@ const products = () => {
                     </div>
 
                     <div className="hidden lg:block ml-32">
-                        <img src="/img/172.png" alt="" />
+                        <img src="/img/plant.png" alt="" />
                     </div>
                 </div>
             </div>

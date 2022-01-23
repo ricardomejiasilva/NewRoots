@@ -3,21 +3,15 @@ const ImpactCalcMob = () => {
     const [client, setClient] = useState(false)
     const [cups, setCups] = useState('2')
     const [time, setTime] = useState('years')
-    const [windowWidth, setWindowWith] = useState(window.innerWidth)
 
     let co2Lbs = 0
     let trees = 0
     let o2 = 0
     let action = ''
     let stamp = 'YEARS'
-    let w = window.innerWidth
 
     if (client) action ='serve'
     else action ='drink'
-
-    const handleResize = () => {
-        setWindowWith(window.innerWidth)
-    }
 
     const handleClick = () => {
         setClient(!client)
@@ -47,46 +41,27 @@ const ImpactCalcMob = () => {
         if (isNaN(co2Lbs) == true) co2Lbs = 0
         if (isNaN(trees) == true) trees = 0
         if (isNaN(o2) == true) o2 = 0
+    
     }
 
-    useEffect(() => {
-        window.addEventListener('resize', handleResize)
-
-        return( () => {
-            window.removeEventListener('resize', handleResize)
-        })
-    }, [])
-
     return (
-        <div className={windowWidth >= 768 ? "roots" : "bg-main" + "roots bg-main w-100% px-6 lgg1:px-0 mdd:pt-0 pb-16"}>
+        <div className="roots w-100% px-6 lgg1:px-0 pb-16">
             {calcImpact()}
-            <div className="max-w-1120 md:py-16 my-0 mx-auto text-center md:px-6">
-                <h2 className="hidden md:block text-white text-7xl xxs:text-8xl font-body font-bold">CALCULATE YOUR IMPACT</h2>
-                <p className="hidden md:block text-white text-lg mb-6">Choose how many cups a day you use, and timespan, and see how much impact you’d make.</p>
-                <div className="hidden md:block bg-white rounded-2xl text-xs w-170 py-1 my-0 mx-auto mb-6">
+            <div className="pt-28 pb-16 max-w-1120 my-0 mx-auto text-center">
+                <h2 className="text-white text-7xl xxs:text-8xl font-body font-bold">CALCULATE YOUR IMPACT</h2>
+                <p className="text-white text-lg mb-6">Choose how many cups a day you use, and timespan, and see how much impact you’d make.</p>
+                <div className="bg-white rounded-2xl text-xs w-170  py-1 my-0 mx-auto mb-12">
                     <button onClick={handleClick} className={client ? "inline-block text-primary bg-white px-3 py-1 rounded-2xl cursor-pointer" :"inline-block text-white bg-primary px-3 py-1 rounded-2xl cursor-pointer" }>
-                        <span className="pt-1.5" >INDIVIDUALS</span>
+                        <span className="" >INDIVIDUALS</span>
                     </button>
                     <button onClick={handleClick} className={client ? "inline-block text-white bg-primary ml-0.5 px-3 py-1 rounded-2xl cursor-pointer" : "inline-block text-primary bg-white ml-0.5 px-3 py-1 rounded-2xl cursor-pointer" }>
-                        <span className="pt-1.5" >CAFES</span>
+                        <span className="" >CAFES</span>
                     </button>
                 </div>
-
-                <div className="block md:hidden bg-secondary rounded-2xl text-xs w-170 py-1 pl-1 pr-1.5 my-0 mx-auto mb-6">
-                    <div className="flex">
-                        <button onClick={handleClick} className={client ? "inline-block text-white bg-secondary px-3 py-1 rounded-2xl cursor-pointer" :"inline-block text-secondary bg-white px-3 py-1 rounded-2xl cursor-pointer" }>
-                            <span className="pt-1.5" >INDIVIDUALS</span>
-                        </button>
-                        <button onClick={handleClick} className={client ? "inline-block text-secondary bg-white ml-0.5 px-3 py-1 rounded-2xl cursor-pointer" : "inline-block text-white bg-secondary ml-0.5 px-3 py-1 rounded-2xl cursor-pointer" }>
-                            <span className="pt-1.5" >CAFES</span>
-                        </button>
-                    </div>
-                    
-                </div>
                 
-                <div className="bg-main py-6 mx-auto max-w-1048 ">
+                <div className="max-w-1048 bg-main py-6 mx-auto">
                     <div className="text-white px-2 lgg1:px-0 pb-8 text-2xl">
-                        <p className="leading-10 text-secondary md:text-sky">If I {action} 
+                        <p className="leading-10 text-sky">If I {action} 
                             <input className="bg-transparent w-20 border-b-2 border-sky text-center text-secondary text-2xl font-bold placeholder-secondary focus:outline-none" 
                             type="text" 
                             value={cups}
@@ -107,19 +82,19 @@ const ImpactCalcMob = () => {
                         </p>
                     </div>
 
-                    <div className="bg-main mx-auto text-center mb-3 lg:px-14">
-                        <div className="md:flex md:justify-center md:px-4">
-                            <div className="flex flex-col justify-center bg-white mt w-full h-44 mb-4 mx-auto md:mr-8">
+                    <div className="bg-main mx-auto text-center mb-3 md:px-14">
+                        <div className="md:flex md:justify-center px-4">
+                            <div className="flex flex-col justify-center bg-white mt w-60 xxs:w-72 h-44 mb-4 mx-auto md:mr-8">
                                 <p className="text-primary text-xs font-bold">SAVE</p>
                                 <p className="font-body font-bold text-7xl text-secondary">{co2Lbs} LBS</p>
                                 <p className="w-44 mx-auto text-primary">of carbon dioxide from the atmosphere</p>
                             </div>
-                            <div className="flex flex-col justify-center bg-white mb-4 w-full h-44 mx-auto md:mr-8">
+                            <div className="flex flex-col justify-center bg-white mb-4 w-60 xxs:w-72 h-44 mx-auto md:mr-8">
                                 <p className="text-primary text-xs font-bold">PLANT</p>
                                 <p className="font-body font-bold text-7xl text-secondary">{trees} TREES</p>
                                 <p className="text-primary">in the U.S.</p>
                             </div>
-                            <div className="flex flex-col justify-center bg-white w-full h-44 mx-auto">
+                            <div className="flex flex-col justify-center bg-white w-60 xxs:w-72 h-44 mx-auto">
                                 <p className="text-primary text-xs font-bold">SAVE</p>
                                 <p className="font-body font-bold text-7xl text-secondary">{o2} {stamp}</p>
                                 <p className=" text-primary">of oxygen for one person</p>
