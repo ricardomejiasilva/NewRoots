@@ -67,7 +67,7 @@ const ImpactCalc = () => {
                             value={cups}
                             onChange={(e) => setCups(e.target.value)}
                             name="cups" 
-                            maxLength="4"
+                            maxLength={4}
                             pattern="\d{4}"
                             id="cups" />
 
