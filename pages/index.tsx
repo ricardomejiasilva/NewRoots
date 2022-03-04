@@ -18,7 +18,7 @@ export default function index() {
         <div className="max-w-1120 my-0 mx-auto mb-16 md:mb-0  md:py-24">
                 <div className="relative mb-16 md:mb-28 md:px-6 lg:px-0">
                     <div className="hidden md:block max-w-933">
-                        <img className="h-750" src="/img/main-trees.png" alt="" />
+                        <img className="h-750" src="https://i.postimg.cc/xCqK3YRy/Adobe-Stock-298201069-1-1-1.jpg" alt="" />
                     </div>
                     
                     <div className="bg-tree block md:hidden">

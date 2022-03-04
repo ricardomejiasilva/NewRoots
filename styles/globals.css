@@ -24,7 +24,7 @@ a {
 }
 
 .bg-cover{
-  background-image: url('/img/main.png');
+  background-image: url('https://i.postimg.cc/65QNVPJ6/Adobe-Stock-260724142-1-1-min.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,7 @@ a {
 }
 
 .bg-tree{
-  background-image: url('/img/main-trees.png');
+  background-image: url('https://i.postimg.cc/xCqK3YRy/Adobe-Stock-298201069-1-1-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
